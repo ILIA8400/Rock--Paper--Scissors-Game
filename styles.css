@@ -1,0 +1,142 @@
+body{
+    background-color: rgb(88, 93, 111);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin: 0 auto auto 200px;
+    user-select: none;
+}
+
+.main-container{
+    width: 85%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid rgb(255, 255, 255) 1px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(99, 99, 99);
+}
+
+.player{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btns button{
+    width: 150px;
+    height: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    background-color: rgb(242, 255, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease .2s;
+}
+
+.btns button:hover{
+    background-color: rgb(247, 255, 90);
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.info h3{
+    width: 150px;
+    height: 50px;
+    margin: 0;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.bot{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+.results h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.winner{
+    color: bisque;
+}
+
+.thread{
+    width: 150px;
+    height: 0;
+    border: solid 1px white;
+    position: relative;
+    left: 500px;
+    transform: rotate(90deg);
+    margin-bottom: 75px;
+    margin-top: 75px;
+}
+
+
+
+@media screen and (max-width: 1230px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 500px;
+    }
+
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .player{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .bot{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .thread{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .main-container{
+        min-width: 300px;
+    }
+}
